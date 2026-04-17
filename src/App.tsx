@@ -2,6 +2,7 @@ import { useState } from 'react';
 import MovementScreen from './screens/MovementScreen';
 import FamilyScreen from './screens/FamilyScreen';
 import BathroomScreen from './screens/BathroomScreen';
+import DebugPanel from './components/DebugPanel';
 import './App.css';
 
 const screens = ['movement', 'family', 'bathroom'] as const;
@@ -33,6 +34,7 @@ export default function App() {
 
   return (
     <div className="app">
+      <DebugPanel />
       <div className="screen-container">
         <CurrentScreen />
       </div>
